@@ -62,6 +62,7 @@ print()
 ## Address Group config output
 print("\033[4;34;40m<<<<<<<<  COPY to add to an address group  >>>>>>>\033[0;0m")
 addrgrp(a)
+print("next")
 print("end")
 
 
