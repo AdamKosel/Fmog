@@ -32,9 +32,6 @@ def addrgrp(a):
     seperator = ", "
     print()
     print ("\033[1;36mappend\033[0;0m " + (seperator.join(a)))
-   # for a in a:
-   #     print("\033[1;36mappend " + a + "\033[0;0m")
-  #      print("next")
 
 
 #Input IP addresses and add to list
