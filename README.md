@@ -10,7 +10,7 @@ This script will take a list of IP addresses and create address objects with the
 * importing address list from a file
 * handling CIDR/subnetmask conversion
 * formatting object/group names
-* 
+
 
 
 
