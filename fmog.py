@@ -41,7 +41,6 @@ line = input(prompt)
 while line:
    a.append(str(line))
    line = input(prompt)
-   #The above will add strings to a list
 
 print()
 print()
