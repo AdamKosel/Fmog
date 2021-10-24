@@ -24,4 +24,4 @@ This script will take a list of IP addresses and create address objects with the
 
 **Usage:**
 
-![Alt text](https://i.imgur.com/2ZT5RUx.png "Fmog Usage")
+![Alt text](https://i.imgur.com/yoZYNOm.png "Fmog Usage")
