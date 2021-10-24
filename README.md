@@ -21,3 +21,7 @@ This script will take a list of IP addresses and create address objects with the
 
 -Run from command line
 * python3 fmog.py  
+
+**Usage:**
+
+![Alt text](https://i.imgur.com/2ZT5RUx.png "Fmog Usage")
