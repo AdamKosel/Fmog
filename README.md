@@ -12,7 +12,7 @@ This script will take a list of IP addresses and create address objects with the
 
 
 
-**If running in Linux:**
+**Running in Linux:**
 
 -Make it executable 
 * chmod +x fmog.py 
