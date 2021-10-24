@@ -4,9 +4,6 @@ This script will take a list of IP addresses and create address objects with the
 
 
 Future updates include:
-
--importing address list from a file
-
--handling CIDR/subnetmask conversion
-
--formatting object/group names
+*importing address list from a file
+*handling CIDR/subnetmask conversion
+*formatting object/group names
