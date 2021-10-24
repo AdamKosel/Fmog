@@ -1,16 +1,36 @@
 # This script will take a list of /32 IP addresses and create address objects with the same name.
 
+redc= "\033[1;31m" #Red Color
+bluec= "\033[1;36m" #Blue Color
+ubluec= "\033[4;34;40m" #Underbline Blue
+endc= "\033[0;0m" #End Color
+
+#Address Object Function
+def addrobj(a):
+    for a in a:
+        print(bluec +"edit " + a + endc)
+        print("set subnet " + a + "/32")
+        print("next")
+
+#Address group function
+def addrgrp(a):
+    seperator = ", "
+    print()
+    print (bluec + "append " + endc  + (seperator.join(a)))
+    
+    
+    
 print()
 
 print(" "*27 +"__")
 print(" "*26 +"/ _|")
 print(" "*25 +"| |_   _ __ ___" + " "*14 +"__ _")
-print(" "*25 +"|  _| | '_ ` _ \    \033[1;31m_/_/_/\033[0;0m  / _` |")
-print(" "*25 +"| |   | | | | | |  \033[1;31m_/  _/\033[0;0m  | (_| |")
-print(" "*25 +"|_|   |_| |_| |_| \033[1;31m_/_/_/\033[0;0m    \__, |")
+print(" "*25 +"|  _| | '_ ` _ \    "+ redc +"_/_/_/"+ endc +"  / _` |")
+print(" "*25 +"| |   | | | | | |  "+ redc +"_/  _/"+ endc +"  | (_| |")
+print(" "*25 +"|_|   |_| |_| |_| "+ redc +"_/_/_/"+ endc +"    \__, |")
 print(" "*53 +"__/ /")
 print(" "*52 +"|___/")
-print("\033[1;31m                       Fortinet Mass Address Object Generator \033[0;0m")
+print(redc +"                       Fortinet Mass Address Object Generator" + endc)
 print("                              -Written by Adam Kosel")
 print()
 print("-This script will take a list of IP addresses and create address objects with the same name.")
@@ -20,18 +40,7 @@ print("Enter list of IPs followed by a blank carriage return (aka hit the ENTER 
 print()
 
 
-#Address Object Function
-def addrobj(a):
-    for a in a:
-        print("\033[1;36medit " + a + "\033[0;0m")
-        print("set subnet " + a + "/32")
-        print("next")
 
-#Address group function
-def addrgrp(a):
-    seperator = ", "
-    print()
-    print ("\033[1;36mappend\033[0;0m " + (seperator.join(a)))
 
 
 #Input IP addresses and add to list
@@ -42,13 +51,14 @@ while line:
    a.append(str(line))
    line = input(prompt)
 
+
 print()
 print()
 print()
 print()
 
 ## Address Object config output
-print("\033[4;34;40m<<<<<<<<  COPY to create address objects  >>>>>>>>\033[0;0m")
+print(ubluec + "<<<<<<<<  COPY to create address objects  >>>>>>>>"+ endc)
 print()
 print("conf firewall address")
 addrobj(a)
@@ -56,9 +66,7 @@ print("end")
 print()
 
 ## Address Group config output
-print("\033[4;34;40m<<<<<<<<  COPY to add to an address group  >>>>>>>\033[0;0m")
+print(ubluec + "<<<<<<<<  COPY to add to an address group  >>>>>>>"+ endc)
 addrgrp(a)
 print("next")
 print("end")
-
-
