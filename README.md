@@ -8,7 +8,8 @@ This script will take a list of IP addresses and create address objects with the
 **Future updates include:**
 * error control
 * importing address list from a file
-* handling CIDR/subnetmask conversion
+* handling CIDR/subnetmask
+    - 10/26 Added function to detect if CIDR was specified for non /32 addresses
 * formatting object/group names
 
 
